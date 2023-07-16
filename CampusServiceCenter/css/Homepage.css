@@ -1,0 +1,492 @@
+.contain {
+	width: 1500px;
+	min-width: 1280px;
+	margin: 0 auto;
+	height: 800px;
+	background: linear-gradient(to right, #00008B, #0000CD, #7b68EF, #9932CC)
+}
+
+body {
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	font-family: "microsoft yahei", Arial, Helvetica, sans-serif;
+	color: #333;
+	font-size: 16px;
+}
+
+.top1 {
+	width: 1480px;
+	height: 33px;
+	background: linear-gradient(to right, #00008B, #0000CD, #7b68EF, #9932CC)
+}
+
+.box1 {
+	width: auto;
+	float: right;
+	height: 100%;
+	padding-right: 200px;
+
+}
+
+.box1 a {
+	display: inline-block;
+	width: auto;
+	font-family: "宋体";
+	padding: 0px 10px;
+	font-size: 1em;
+	height: 33px;
+	line-height: 33px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.box1 a:hover {
+	color: #ffaa00;
+}
+
+.box1 span {
+	display: inline-block;
+	width: auto;
+	float: left;
+	height: 33px;
+	color: #fff;
+}
+
+.bit {
+	cursor: pointer;
+	padding-left: 10px;
+
+}
+
+.bit img {
+	border: 0px;
+	vertical-align: top;
+	padding-top: 6px;
+	height: 24px;
+}
+
+.top2 {
+	height: auto;
+	width: 100%;
+	background: linear-gradient(to right, #00008B, #0000CD, #7b68EF, #9932CC)
+}
+
+.logo {
+	width: 1000px;
+	height: 100px;
+	margin: 0px 118.2px;
+}
+
+.logo1 img {
+	width: 29%;
+}
+
+.logo1 {
+	width: 1100px;
+	height: 60px;
+	float: left;
+	margin: 0px 100px;
+	padding-left: 15px;
+}
+
+.logo img {
+	margin: 0 0 0 60px;
+}
+
+/*菜单栏*/
+.fwall {
+	width: 1500px;
+	height: 0px;
+	position: relative;
+	z-index: 1;
+
+}
+
+.fw {
+	width: 1000px;
+	background-color: important;
+	height: 40px;
+	margin: 0 auto;
+	border-bottom: solid 2px #ffaa00;
+
+
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+
+}
+
+li {
+	list-style: none;
+	display: block;
+	width: 166px;
+	text-align: center;
+	line-height: 35px;
+}
+
+ul li a {
+	text-decoration: none;
+	font-family: "Microsoft Yahei";
+	color: #ffffff;
+	font-size: 19px;
+	display: block;
+	width: 166px;
+	height: 40px;
+
+
+
+}
+
+.fw li a:hover {
+
+	width: 166px;
+	height: 38px;
+	color: #ff007f;
+	display: inline-block;
+}
+
+.sort {
+	display: none;
+}
+
+.sort a {
+	color: #000;
+}
+
+.sort1 {
+	display: none;
+}
+
+.sort1 a {
+	color: #000;
+}
+
+.a1 {
+	width: 166px;
+	height: 40px;
+	float: left;
+
+}
+
+.a2 {
+	width: 166px;
+	height: 40px;
+	float: left;
+}
+
+.a3 {
+	width: 166px;
+	height: 40px;
+	float: left;
+
+}
+
+.a4 {
+	width: 166px;
+	height: 40px;
+	float: left;
+
+}
+
+.a5 {
+	width: 166px;
+	height: 40px;
+	float: left;
+
+}
+
+.a3:hover .sort {
+	display: block;
+	height: 330px;
+	background: url("../img/jian.png") center no-repeat;
+	border-top: solid 4px #ffcc00;
+	transition-duration: 3s;
+
+}
+
+.a4:hover .sort1 {
+	display: block;
+	height: 330px;
+	background: url("../img/jian.png") center no-repeat;
+	border-top: solid 4px #ffcc00;
+}
+
+/* 轮播图 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.slidershow {
+	float: left;
+	width: 1380px;
+	height: 600px;
+	overflow: hidden;
+
+
+}
+
+.middle {
+	position: relative;
+	top: 305px;
+	left: 740px;
+	transform: translate(-50%, -50%);
+	border-radius: 30px;
+	box-shadow: 0 0 10px #032e63;
+
+}
+
+.navigation {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+
+}
+
+.bar {
+	width: 50px;
+	height: 10px;
+	border: 2px solid #fff;
+	margin: 6px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.bar:hover {
+	background: #fff;
+}
+
+input[name="r"] {
+	position: absolute;
+	visibility: hidden;
+}
+
+.sliders {
+	width: 500%;
+	height: 100%;
+	display: flex;
+
+}
+
+.slide {
+	width: 20%;
+	transition: 0.6s;
+
+}
+
+.slide img {
+	position: relative;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#r1:checked~.s1 {
+	margin-left: 0;
+}
+
+#r2:checked~.s2 {
+	margin-left: -20%;
+}
+
+#r3:checked~.s3 {
+	margin-left: -40%;
+}
+
+#r4:checked~.s4 {
+	margin-left: -60%;
+}
+
+/*轮播图结尾*/
+
+/*列表栏*/
+.list {
+	width: 1050px;
+	height: 312px;
+	margin: 0 auto;
+}
+
+.listleft {
+	float: left;
+	width: 500px;
+	height: 312px;
+	position: relative;
+	top: 80px;
+
+}
+
+.listleft a {
+	position: relative;
+	top: -8px;
+	left: 7px;
+}
+
+.listright {
+	float: right;
+	width: 500px;
+	height: 312px;
+	position: relative;
+	top: 80px;
+}
+
+.listright a {
+	position: relative;
+	top: -8px;
+	left: 7px;
+}
+
+.list a {
+	color: black;
+	text-decoration: none;
+	display: inline;
+}
+
+.xwdt {
+	color: black;
+	font-size: 18px;
+
+}
+
+.more {
+	position: relative;
+	left: 320px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+.more a {
+	color: #5a5a5a;
+}
+
+.more a:hover {
+	color: #8c0000;
+}
+
+.hx {
+	border-bottom: 2px solid #0000e3;
+	padding-bottom: 6px;
+}
+
+.wz a {
+	width: 408px;
+	display: block;
+	float: left;
+	text-align: left;
+	margin: 0 0 0 60px;
+	position: relative;
+	top: -70px;
+	left: 30px;
+	font-size: 15px;
+}
+
+.data {
+	position: relative;
+	left: -50px;
+}
+
+.data {
+	font-family: Georgia;
+	color: #7f00be;
+}
+
+/* 图标栏 */
+.B {
+	width: 970px;
+	display: block;
+	padding: 15px;
+	margin: 0 auto;
+	position: relative;
+	top: 200px;
+	text-align: left;
+}
+
+.b {
+	display: block;
+	float: left;
+	line-height: 70px;
+	margin: 0 0 0 50px;
+}
+.b:hover{
+	box-shadow:0px 50px 200px rgba(0, 0, 0, 0.7);
+	    margin-top: 3px;
+	    transition: 0.3s;
+		border-radius: 25px;
+}
+.zi {
+	position: relative;
+	margin: 0 0 0 15px;
+	font-size: 16px;
+	top: -20px;
+}
+
+.zi:hover {
+	color: #aa0000;
+}
+
+/* 底部 */
+
+.bottom {
+	float: left;
+	position: relative;
+	top: 450px;
+	background-image: url("../img/footer.png");
+	width: 100%;
+	height: 40px;
+	margin: 0 15px auto;
+
+}
+
+.bottom a {
+	color: #ffffff;
+	position: relative;
+	top: 12px;
+	font-family: "微软雅黑";
+}
+/* 植物图设置 */
+.big{
+	margin: 0 auto;
+	box-shadow: 1px solid #000;
+	width: 1000px;
+	height: 190px;
+	position: relative;
+	top: 300px;
+	float: left;
+	text-align: left;
+	margin: 0;
+}
+.one img{
+	width: 220px;
+	height: 140px;
+	float: left;
+}
+.one{
+	width: 220px;
+	height: 140px;
+	margin-top: 20px;
+	padding: 15px;
+	float: left;
+}
+.one:hover{
+	box-shadow:0px 50px 200px rgba(0, 0, 0, 0.7);
+	    margin-top: 7px;
+	    transition: 0.8s;
+	
+}
+.bbl{
+	display: inline-block;
+	    width: 200px;
+	    height: 36px;
+	    line-height: 36px;
+	    position: relative;
+	    top: -36px;
+	    z-index: 2;
+	    background-color: #96757A;
+	    color: #FFF;
+	    text-align: center;
+	    padding: 0 10px;
+	    opacity: 0.8;
+}
